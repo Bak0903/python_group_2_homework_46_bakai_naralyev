@@ -16,5 +16,33 @@
 	    		console.log('хорошо');
 	</script>
 	
+	<script>
+		function avarage_number(massive) {
+			let result = 0
+			for(let i = 0; i < massive.length; i++)
+				result = result + massive[i]
+    		return result/massive.length;
+		}
+
+		let x = [1, 5, 12, 4, 3]
+		let y = [2, 3, 4, 5, 6, 7, 8, 9, 10]
+		let z = [3, 10, 17]
+
+		console.log(avarage_number(x));
+		console.log(avarage_number(y));
+		console.log(avarage_number(z));
+	</script>
+
+	<script>
+		function puzzle(){
+			let question_answer = prompt("У квадратного стола отпилили один угол. Сколько теперь углов у него стало?", 0);
+			if(question_answer === '5' || question_answer === 'пять') {
+				alert("Ответ верный");
+			}
+			else {
+				alert("Ответ неверный");
+			}
+		}
+	</script>
 </body>
 </html>
